@@ -1,0 +1,49 @@
+<html>
+    <body>
+
+        <h1>    Details    </h1>
+   <form>   
+        <p id="demo"></p>
+        <label>FirstName:</label><br>
+        <input type="text" id="FirstName" placeholder="Enter your name"><br>
+        <label> LastName:</label><br>
+        <input type="text" id="LastName" placeholder="Enter your name" ><br>
+        <label>Age:</label><br>
+        <input type="number" id="Age" placeholder="Enter your Age"><br>
+        <label> Email:</label><br>
+        <input type="Email" id="Email"placeholder="Enter your Eamil" ><br>
+        <label> Password</label><br>
+        <input type="Password" id="Password" placeholder="Enter your password"><br>
+        
+    </form> 
+    
+    <input type="submit"  id ="submit" value="Submit"onclick="display()" >
+        
+        <script>
+
+      function display(){
+    
+            let FirstName=document.getElementById("FirstName").value
+            
+           
+            let LastName=document.getElementById("LastName").value
+            
+            let Age=document.getElementById("Age").value
+           
+            let Email=document.getElementById("Email").value
+           
+            let Password=document.getElementById("Password").value
+            var valid = true;
+				if (FirstName == "") {
+					document.getElementById("FirstName").innerHTML = "Please enter your name.";
+					valid = false;
+                }
+                
+        console.log(FirstName+"\n",LastName+"\n",Age+"\n",Email+"\n",Password)
+
+     }
+  
+   
+        </script>
+    </body>
+</html>
